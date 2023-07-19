@@ -1,0 +1,205 @@
+/* Base styles for the navbar */
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+   
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .navbar-logo img {
+    width: 80px; 
+    height: 70px;
+  
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+    
+   
+    
+  }
+  
+  .social-icon-active{
+    background-color: rgb(225, 225, 225);
+  border: 1p solid gray;
+  padding: 13px 10px;
+  margin-top: -11px;
+}
+  
+
+
+  .navbar-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-menu ul {
+      flex-direction: column;
+    }
+  
+    .navbar-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /*  banner section */
+.banner-text-set-bg{
+  background-image: url("images/Group\ 14.png");
+  background-size: cover;
+  background-position: center;
+  height: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.banner-title{
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.banner-heading{
+  font-size: 55px;
+  font-weight: 900;
+  background: linear-gradient(to bottom right, #3111ce, #ff00cb, #00f);
+    background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c82f2f00;
+}
+
+
+
+
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-content, .banner-image {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Base styles for the section */
+.We-are-game-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 85%;
+  margin: 100px auto;
+}
+.We-are-game-pera{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.left-content {
+  flex: 1;
+  text-align: center;
+}
+
+.left-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  text-align: end;
+}
+
+
+.Our-purpose{
+  font-size: 22px;
+  color: #3c3b3b;
+}
+
+.unleash-the-gamer{
+  font-size: 30px;
+  color: #878585bb;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .left-content, .right-content {
+    flex: 100%;
+  }
+}
+
+.We-are-gamer-title{
+  font-size: 55px;
+  font-weight: 900;
+  background: linear-gradient(to bottom right, #3111ce, #ff00cb, #00f);
+  background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c82f2f00;
+}
