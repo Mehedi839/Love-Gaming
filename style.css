@@ -211,6 +211,24 @@ button {
   margin: 100px auto;
 }
 
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  .Online-Games-Card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .Online-Games-Card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+
+
 .Online-Games-Video-header{
   text-align: center;
 }
@@ -249,6 +267,26 @@ button {
   width: 85%;
   margin: 0 auto;
 }
+
+/* Media query for responsive design */
+@media screen and (max-width: 800px) {
+  .Play-Instantly-Container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .Play-Instantly-img-1{
+    width: 250px;
+  }
+  .Play-Instantly-img-2{
+    display: none;
+  }
+}
+
+
+
+
 .Play-Instantly-img-2{
   position: relative;
   top: -243px;
@@ -272,6 +310,32 @@ button {
   display: inline-block;
 }
 
+.category-section{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 85%;
+  margin: 100px auto;
+  gap: 40px;
+}
+
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  .category-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .category-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+
 .category-flex-tag{
   display: flex;
   align-items: center;
@@ -292,10 +356,94 @@ button {
   font-size: 20px;
  
 }
-.category-section{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 85%;
-  margin: 100px auto;
-  gap: 40px;
+
+footer{
+  background-color: #0a0332;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
+
+.footer-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-flex , li{
+   
+  list-style: none;
+  margin-right: 20px;
+  font-size: 19px;
+}
+
+.social{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.fa-brands{
+font-size: 30px;
+margin-right: 15px;
+}
+
+.footer-text{
+
+  font-size: 35px;
+}
+
+/*  */
+/* Base styles for the image container */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Styles for the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  border: 3px solid rgb(215, 14, 222);
+}
+
+.text-overlay-pera {
+  color: #ff0000;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Style for the Font Awesome icon */
+.text-overlay i {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.image-container:hover img {
+  opacity: 0.5;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+
