@@ -242,3 +242,60 @@ button {
  font-size: 20px;
 }
 
+.Play-Instantly-Container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.Play-Instantly-img-2{
+  position: relative;
+  top: -243px;
+  left: 455px;
+  margin-right: 200px;
+}
+
+.Play-Instantly-title{
+  font-size: 45px;
+  font-weight: 700;
+}
+.Play-Instantly-span{
+  font-size: 45px;
+  font-weight: 700;
+  background: linear-gradient(to bottom right, #3111ce, #ff00cb, #00f);
+  background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c82f2f00;
+  display: inline-block;
+}
+
+.category-flex-tag{
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color: #f3eeee85;
+  border-radius: 50px;
+  justify-content: space-evenly;
+}
+
+.category-flex-tag:hover{
+  border: 1px solid rgb(205, 16, 211);
+  cursor: pointer;
+  color: #ff00cb;
+}
+
+
+.category-flex-tag , span{
+  font-size: 20px;
+ 
+}
+.category-section{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 85%;
+  margin: 100px auto;
+  gap: 40px;
+}
