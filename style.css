@@ -203,3 +203,42 @@ button {
   background-clip: text;
   color: #c82f2f00;
 }
+
+.Online-Games-Card{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 85%;
+  margin: 100px auto;
+}
+
+.Online-Games-Video-header{
+  text-align: center;
+}
+
+.Online-Games-Video-span{
+  font-size: 55px;
+  font-weight: 900;
+  background: linear-gradient(to bottom right, #3111ce, #ff00cb, #00f);
+  background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c82f2f00;
+  display: inline-block;
+}
+
+.Online-Games-Video-title{
+  font-size: 55px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.Online-Games-Video-pera{
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
+.card ,p{
+ font-size: 20px;
+}
+
